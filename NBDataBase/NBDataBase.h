@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <FMDB/FMDatabaseAdditions.h>
 #import "NBSQLStatementHelper.h"
+#import "NBDBDefine.h"
+#import "NBDBHelper.h"
+#import "NBDBConfigure.h"
+
 @class FMDatabaseQueue;
 @class NBBaseDBTableModel;
 @interface NBDataBase : NSObject
