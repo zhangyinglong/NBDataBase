@@ -28,6 +28,24 @@
 		25D7A37A1B6F46EF00DC4412 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25D7A3781B6F46B900DC4412 /* libsqlite3.0.dylib */; };
 		25E05FFF1BABFFE800B380B8 /* NBDBConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E05FFE1BABFFE800B380B8 /* NBDBConfigure.m */; };
 		4ADD776E95A985BD9048E926 /* libPods-NBDataBaseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3701764F9C01CE809CF308 /* libPods-NBDataBaseDemo.a */; };
+		692B871266F8C4D69B3B134B /* libPods-NBDataBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC266ACCA721D795F76BFFDD /* libPods-NBDataBase.a */; };
+		FCB829E51ECAB28E00F9A26D /* NBDataBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB829DE1ECAB28D00F9A26D /* NBDataBase.framework */; };
+		FCB829E61ECAB28E00F9A26D /* NBDataBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCB829DE1ECAB28D00F9A26D /* NBDataBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FCB829EB1ECAB32C00F9A26D /* NBBaseDBTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7A3361B6F098500DC4412 /* NBBaseDBTableModel.m */; };
+		FCB829EC1ECAB32C00F9A26D /* NBDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7A3381B6F098500DC4412 /* NBDataBase.m */; };
+		FCB829ED1ECAB32C00F9A26D /* NBDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7A33B1B6F098500DC4412 /* NBDBHelper.m */; };
+		FCB829EE1ECAB32C00F9A26D /* NBDBNameHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7A33D1B6F098500DC4412 /* NBDBNameHelper.m */; };
+		FCB829EF1ECAB32C00F9A26D /* NBPrivateDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7A33F1B6F098500DC4412 /* NBPrivateDataBase.m */; };
+		FCB829F01ECAB32C00F9A26D /* NBSQLStatementHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D7A3411B6F098500DC4412 /* NBSQLStatementHelper.m */; };
+		FCB829F11ECAB32C00F9A26D /* NBDBConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 25E05FFE1BABFFE800B380B8 /* NBDBConfigure.m */; };
+		FCB829F21ECAB33900F9A26D /* NBBaseDBTableModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A3351B6F098500DC4412 /* NBBaseDBTableModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB829F31ECAB33900F9A26D /* NBDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A3371B6F098500DC4412 /* NBDataBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB829F41ECAB33900F9A26D /* NBDBDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A3391B6F098500DC4412 /* NBDBDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB829F51ECAB33900F9A26D /* NBDBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A33A1B6F098500DC4412 /* NBDBHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB829F61ECAB33900F9A26D /* NBDBNameHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A33C1B6F098500DC4412 /* NBDBNameHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB829F71ECAB33900F9A26D /* NBPrivateDataBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A33E1B6F098500DC4412 /* NBPrivateDataBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB829F81ECAB33900F9A26D /* NBSQLStatementHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 25D7A3401B6F098500DC4412 /* NBSQLStatementHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FCB829F91ECAB33900F9A26D /* NBDBConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = 25E05FFD1BABFFE800B380B8 /* NBDBConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +56,28 @@
 			remoteGlobalIDString = 25CDAC9F1B6B765300C59432;
 			remoteInfo = NBDataBaseDemo;
 		};
+		FCB829E31ECAB28E00F9A26D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CDAC981B6B765300C59432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCB829DD1ECAB28D00F9A26D;
+			remoteInfo = NBDataBase;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCB829EA1ECAB28E00F9A26D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FCB829E61ECAB28E00F9A26D /* NBDataBase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0AF4D0421C735EDB97BDCAD5 /* Pods-NBDataBaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBDataBaseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBDataBaseDemo/Pods-NBDataBaseDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,7 +123,11 @@
 		25E05FFD1BABFFE800B380B8 /* NBDBConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBDBConfigure.h; sourceTree = "<group>"; };
 		25E05FFE1BABFFE800B380B8 /* NBDBConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBDBConfigure.m; sourceTree = "<group>"; };
 		5823DA59E907DE8549F78478 /* Pods-NBDataBaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBDataBaseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBDataBaseDemo/Pods-NBDataBaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		78B690314004FDCB674B65A6 /* Pods-NBDataBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBDataBase.release.xcconfig"; path = "Pods/Target Support Files/Pods-NBDataBase/Pods-NBDataBase.release.xcconfig"; sourceTree = "<group>"; };
+		BC266ACCA721D795F76BFFDD /* libPods-NBDataBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NBDataBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB6C22B50910F6BE08E4B88 /* Pods-NBDataBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NBDataBase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NBDataBase/Pods-NBDataBase.debug.xcconfig"; sourceTree = "<group>"; };
 		FC3701764F9C01CE809CF308 /* libPods-NBDataBaseDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NBDataBaseDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB829DE1ECAB28D00F9A26D /* NBDataBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NBDataBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C601201BB0FEEB000983B2 /* Foundation.framework in Frameworks */,
+				FCB829E51ECAB28E00F9A26D /* NBDataBase.framework in Frameworks */,
 				25D7A37A1B6F46EF00DC4412 /* libsqlite3.0.dylib in Frameworks */,
 				4ADD776E95A985BD9048E926 /* libPods-NBDataBaseDemo.a in Frameworks */,
 			);
@@ -105,6 +149,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCB829DA1ECAB28D00F9A26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				692B871266F8C4D69B3B134B /* libPods-NBDataBase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,6 +165,8 @@
 			children = (
 				5823DA59E907DE8549F78478 /* Pods-NBDataBaseDemo.debug.xcconfig */,
 				0AF4D0421C735EDB97BDCAD5 /* Pods-NBDataBaseDemo.release.xcconfig */,
+				DFB6C22B50910F6BE08E4B88 /* Pods-NBDataBase.debug.xcconfig */,
+				78B690314004FDCB674B65A6 /* Pods-NBDataBase.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -154,6 +208,7 @@
 			children = (
 				25CDACA01B6B765300C59432 /* NBDataBaseDemo.app */,
 				25CDACB91B6B765300C59432 /* NBDataBaseDemoTests.xctest */,
+				FCB829DE1ECAB28D00F9A26D /* NBDataBase.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -227,11 +282,30 @@
 			isa = PBXGroup;
 			children = (
 				FC3701764F9C01CE809CF308 /* libPods-NBDataBaseDemo.a */,
+				BC266ACCA721D795F76BFFDD /* libPods-NBDataBase.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FCB829DB1ECAB28D00F9A26D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB829F21ECAB33900F9A26D /* NBBaseDBTableModel.h in Headers */,
+				FCB829F31ECAB33900F9A26D /* NBDataBase.h in Headers */,
+				FCB829F41ECAB33900F9A26D /* NBDBDefine.h in Headers */,
+				FCB829F51ECAB33900F9A26D /* NBDBHelper.h in Headers */,
+				FCB829F61ECAB33900F9A26D /* NBDBNameHelper.h in Headers */,
+				FCB829F71ECAB33900F9A26D /* NBPrivateDataBase.h in Headers */,
+				FCB829F81ECAB33900F9A26D /* NBSQLStatementHelper.h in Headers */,
+				FCB829F91ECAB33900F9A26D /* NBDBConfigure.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		25CDAC9F1B6B765300C59432 /* NBDataBaseDemo */ = {
@@ -244,10 +318,12 @@
 				25CDAC9E1B6B765300C59432 /* Resources */,
 				8F466DE83E32DDE1D7C004BE /* [CP] Embed Pods Frameworks */,
 				FC15E26419462C750881508E /* [CP] Copy Pods Resources */,
+				FCB829EA1ECAB28E00F9A26D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FCB829E41ECAB28E00F9A26D /* PBXTargetDependency */,
 			);
 			name = NBDataBaseDemo;
 			productName = NBDataBaseDemo;
@@ -272,6 +348,26 @@
 			productReference = 25CDACB91B6B765300C59432 /* NBDataBaseDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		FCB829DD1ECAB28D00F9A26D /* NBDataBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCB829E91ECAB28E00F9A26D /* Build configuration list for PBXNativeTarget "NBDataBase" */;
+			buildPhases = (
+				4F0D13B349A3E7972F1A2F7A /* [CP] Check Pods Manifest.lock */,
+				FCB829D91ECAB28D00F9A26D /* Sources */,
+				FCB829DA1ECAB28D00F9A26D /* Frameworks */,
+				FCB829DB1ECAB28D00F9A26D /* Headers */,
+				FCB829DC1ECAB28D00F9A26D /* Resources */,
+				ACCA07AC84EC734169488401 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBDataBase;
+			productName = NBDataBase;
+			productReference = FCB829DE1ECAB28D00F9A26D /* NBDataBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -288,6 +384,11 @@
 					25CDACB81B6B765300C59432 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 25CDAC9F1B6B765300C59432;
+					};
+					FCB829DD1ECAB28D00F9A26D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4R47MJ4W53;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -306,6 +407,7 @@
 			targets = (
 				25CDAC9F1B6B765300C59432 /* NBDataBaseDemo */,
 				25CDACB81B6B765300C59432 /* NBDataBaseDemoTests */,
+				FCB829DD1ECAB28D00F9A26D /* NBDataBase */,
 			);
 		};
 /* End PBXProject section */
@@ -328,9 +430,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCB829DC1ECAB28D00F9A26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4F0D13B349A3E7972F1A2F7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		8F466DE83E32DDE1D7C004BE /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +470,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBDataBaseDemo/Pods-NBDataBaseDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ACCA07AC84EC734169488401 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NBDataBase/Pods-NBDataBase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AE4B7ADF043A094763374D87 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,7 +497,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FC15E26419462C750881508E /* [CP] Copy Pods Resources */ = {
@@ -408,6 +547,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCB829D91ECAB28D00F9A26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB829EB1ECAB32C00F9A26D /* NBBaseDBTableModel.m in Sources */,
+				FCB829EC1ECAB32C00F9A26D /* NBDataBase.m in Sources */,
+				FCB829ED1ECAB32C00F9A26D /* NBDBHelper.m in Sources */,
+				FCB829EE1ECAB32C00F9A26D /* NBDBNameHelper.m in Sources */,
+				FCB829EF1ECAB32C00F9A26D /* NBPrivateDataBase.m in Sources */,
+				FCB829F01ECAB32C00F9A26D /* NBSQLStatementHelper.m in Sources */,
+				FCB829F11ECAB32C00F9A26D /* NBDBConfigure.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -415,6 +568,11 @@
 			isa = PBXTargetDependency;
 			target = 25CDAC9F1B6B765300C59432 /* NBDataBaseDemo */;
 			targetProxy = 25CDACBA1B6B765300C59432 /* PBXContainerItemProxy */;
+		};
+		FCB829E41ECAB28E00F9A26D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCB829DD1ECAB28D00F9A26D /* NBDataBase */;
+			targetProxy = FCB829E31ECAB28E00F9A26D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -474,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -512,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,7 +685,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4R47MJ4W53;
 				INFOPLIST_FILE = NBDataBaseDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -540,7 +698,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4R47MJ4W53;
 				INFOPLIST_FILE = NBDataBaseDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -580,6 +738,64 @@
 			};
 			name = Release;
 		};
+		FCB829E71ECAB28E00F9A26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFB6C22B50910F6BE08E4B88 /* Pods-NBDataBase.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4R47MJ4W53;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = ../NBDataBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Future-Entertainment-Co.Ltd..NBDataBase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FCB829E81ECAB28E00F9A26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B690314004FDCB674B65A6 /* Pods-NBDataBase.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4R47MJ4W53;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ../NBDataBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Future-Entertainment-Co.Ltd..NBDataBase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -606,6 +822,15 @@
 			buildConfigurations = (
 				25CDACC71B6B765300C59432 /* Debug */,
 				25CDACC81B6B765300C59432 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCB829E91ECAB28E00F9A26D /* Build configuration list for PBXNativeTarget "NBDataBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB829E71ECAB28E00F9A26D /* Debug */,
+				FCB829E81ECAB28E00F9A26D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

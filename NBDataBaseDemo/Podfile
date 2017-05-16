@@ -4,4 +4,8 @@ pod 'FMDB/SQLCipher'
 
 end
 
-
+target 'NBDataBase' do
+    
+    pod 'FMDB/SQLCipher'
+    
+end
